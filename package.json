@@ -1,17 +1,24 @@
 {
-  "name": "blog_post",
+  "name": "blog-post",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "me",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerardo11011/Blog-Post.git"
+  },
+  "author": "Gerardo Ponce",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerardo11011/Blog-Post/issues"
+  },
+  "homepage": "https://github.com/Gerardo11011/Blog-Post#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "server": "^1.0.18",
     "uuid": "^3.3.2"
   }
 }
