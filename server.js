@@ -39,7 +39,7 @@ Posts = [
 // GET method route
 app.get('/blog-post', (req, res) => {
     res.status(200).json({
-        message: "Successfully sent the list of posts",
+        message: "All Succes",
         status: 200,
         posts: Posts
     });
@@ -85,9 +85,8 @@ app.post('/blog-post', jsonParser, (req, res) => {
     const content = req.body.content;
     const Author = req.body.author;
     const date = req.body.publishDate;
-    const post = req.body.post;
 
-    if(!post || !post.title || !post.content || !post.author || !post.publishDate){
+    if(!title || !content || !Author || !date){
     res.status(406).json({
       message : "Missing data.",
       status : 406
@@ -163,7 +162,8 @@ app.put('/blog-post/:id', jsonParser, (req, res) => {
             status: 404
         });
         return;
-    }else{
+    }
+    else{
         Posts.forEach(item => {
             if(postId == item.id){
                 if(NewPost.title) {
